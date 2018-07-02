@@ -1,0 +1,133 @@
+.toggle {
+  line-height: 25px;
+}
+
+.toggle .toggle-radio,
+.toggle .toggle-checkbox,
+.toggle .toggle-button {
+  display: inline-block;
+}
+
+.toggle .toggle-radio>input[type="radio"],
+.toggle .toggle-radio>input[type="checkbox"],
+.toggle .toggle-checkbox>input[type="radio"],
+.toggle .toggle-checkbox>input[type="checkbox"],
+.toggle .toggle-button>input[type="radio"],
+.toggle .toggle-button>input[type="checkbox"] {
+  display: none;
+}
+
+.toggle .toggle-radio>input[type="radio"]:checked+.track>i,
+.toggle .toggle-radio>input[type="radio"]:checked+.track>span,
+.toggle .toggle-radio>input[type="checkbox"]:checked+.track>i,
+.toggle .toggle-radio>input[type="checkbox"]:checked+.track>span,
+.toggle .toggle-checkbox>input[type="radio"]:checked+.track>i,
+.toggle .toggle-checkbox>input[type="radio"]:checked+.track>span,
+.toggle .toggle-checkbox>input[type="checkbox"]:checked+.track>i,
+.toggle .toggle-checkbox>input[type="checkbox"]:checked+.track>span,
+.toggle .toggle-button>input[type="radio"]:checked+.track>i,
+.toggle .toggle-button>input[type="radio"]:checked+.track>span,
+.toggle .toggle-button>input[type="checkbox"]:checked+.track>i,
+.toggle .toggle-button>input[type="checkbox"]:checked+.track>span {
+  display: block;
+}
+
+.toggle .toggle-radio p,
+.toggle .toggle-checkbox p,
+.toggle .toggle-button p {
+  display: inline-block;
+}
+
+.toggle .toggle-radio .track,
+.toggle .toggle-checkbox .track,
+.toggle .toggle-button .track {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 3px;
+  position: relative;
+}
+
+
+.toggle .toggle-radio .track>span,
+.toggle .toggle-checkbox .track>span,
+.toggle .toggle-button .track>span {
+  display: none;
+  width: 15px;
+  height: 8px;
+  border-left: 3px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  position: absolute;
+  left: 3px;
+  top: 5px;
+  transform: rotate(-45deg);
+  transition: all 0.5s;
+}
+
+.toggle .toggle-radio .track.track-icon>span,
+.toggle .toggle-checkbox .track.track-icon>span,
+.toggle .toggle-button .track.track-icon>span {
+  border-width: 0;
+  transform: rotate(0deg);
+}
+
+.toggle .toggle-button>input[type="checkbox"]:checked+.track span {
+  left: 25px;
+}
+
+.toggle .toggle-button .track {
+  width: 50px;
+  height: 25px;
+  border-radius: 20px;
+}
+
+.toggle .toggle-button .track>span {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 100%;
+  left: 0;
+  top: 0;
+}
+
+.toggle .toggle-dander>.track,
+.toggle .toggle-dander>input[type="checkbox"]:checked+.track {
+  background-color: crimson !important;
+}
+
+.toggle .toggle-dander>.track .fa,
+.toggle .toggle-dander>input[type="checkbox"]:checked+.track .fa {
+  color: #fff !important;
+}
+
+.toggle .toggle-warning>.track,
+.toggle .toggle-warning>input[type="checkbox"]:checked+.track {
+  background-color: #ff7200 !important;
+}
+
+.toggle .toggle-warning>.track .fa,
+.toggle .toggle-warning>input[type="checkbox"]:checked+.track .fa {
+  color: #fff !important;
+}
+
+.toggle .toggle-success>.track,
+.toggle .toggle-success>input[type="checkbox"]:checked+.track,
+.toggle .toggle-success>input[type="radio"]:checked+.track {
+  background-color: #2ecc40 !important;
+}
+
+.toggle .toggle-success>.track .fa,
+.toggle .toggle-success>input[type="checkbox"]:checked+.track .fa,
+.toggle .toggle-success>input[type="radio"]:checked+.track .fa {
+  color: #fff !important;
+}
+
+.toggle .toggle-button.toggle-success>.track,
+.toggle .toggle-button.toggle-dander>.track,
+.toggle .toggle-button.toggle-warning>.track {
+  background-color: transparent !important;
+}
